@@ -1,4 +1,40 @@
 body {
-  color: #EEEEEE;
-  background: #388541;
+  color: #000000;
+  background-image: url("img/bg.gif");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  text-align: center;
+}
+
+.container {
+  display: flex;
+
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  align-items: center;    
+
+
+  height: 90vh;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.container > div {
+  background-color: rgb(255, 255, 255);
+  border: 0px solid #ffffff;
+
+  padding: 0.5rem;
+}
+
+.important {
+  box-shadow: 0px 0px 50px 50px white;
+}
+
+.unimportant {
+  box-shadow: 0px 0px 5px 5px white;
+  border-radius: 25px;
+}
+
+.warning {
+  color: red;
 }
