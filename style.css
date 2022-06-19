@@ -28,7 +28,7 @@ body {
 
 .photo {
   padding: 0px !important;
-  radius: 3rem;
+  image: 3rem;
 }
 
 .photo > img {
