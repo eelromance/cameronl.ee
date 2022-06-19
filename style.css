@@ -26,15 +26,30 @@ body {
   padding: 0.5rem;
 }
 
+.photo {
+  padding: 0px !important;
+  radius: 3rem;
+}
+
+.photo > img {
+  display: block;
+}
+
 .important {
-  box-shadow: 0px 0px 50px 50px white;
+  box-shadow: 0px 0px 2rem 2rem white;
 }
 
 .unimportant {
-  box-shadow: 0px 0px 5px 5px white;
-  border-radius: 25px;
+  box-shadow: 0px 0px 1rem 1rem white;
+  border-radius: 2rem;
 }
 
 .warning {
   color: red;
+}
+
+#introduction {
+  /* box-shadow: 0px 0px 2rem 2rem rgb(243, 255, 197);
+  background: radial-gradient(white, rgb(243, 255, 197)); */
+  margin: 3vw;
 }
