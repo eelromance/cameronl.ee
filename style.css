@@ -28,11 +28,16 @@ body {
 
 .photo {
   padding: 0px !important;
+  margin: 0.5rem;
   image: 3rem;
 }
 
 .photo > img {
   display: block;
+}
+
+.music {
+  margin: 1rem;
 }
 
 .important {
@@ -53,3 +58,9 @@ body {
   background: radial-gradient(white, rgb(243, 255, 197)); */
   margin: 3vw;
 }
+
+/* HIDDENS */
+
+#tags {visibility: hidden;}
+#curations {visibility: hidden;}
+#nightfall-icing{visibility: hidden;}
