@@ -6,24 +6,31 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: initial;
+}
+
 .container {
   display: flex;
 
   flex-wrap: wrap; 
-  justify-content: space-around; 
+  justify-content: space-evenly; 
   align-items: center;    
+  flex-basis: 1;
 
-
-  height: 90vh;
-  padding: 0.5rem;
-  gap: 0.5rem;
+  padding: 2vw;
+  gap: 2vw;
 }
 
 .container > div {
   background-color: rgb(255, 255, 255);
   border: 0px solid #ffffff;
 
-  padding: 0.5rem;
+  padding: 2vw;
 }
 
 .photo {
@@ -49,18 +56,53 @@ body {
   border-radius: 2rem;
 }
 
-.warning {
-  color: red;
-}
-
 #introduction {
   /* box-shadow: 0px 0px 2rem 2rem rgb(243, 255, 197);
   background: radial-gradient(white, rgb(243, 255, 197)); */
   margin: 3vw;
 }
 
+#contact-me a {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 3rem;
+  vertical-align:super;
+}
+
+#title {
+  /* flex: 100%; */
+  font-size: 7vw;
+  margin: 0;
+}
+
+#title:hover {
+  color: white;
+}
+
+#photobooth {
+  flex: 30%;
+}
+
+/* #work {
+  flex: 100%;
+}
+
+#skills{
+  flex: 100%;
+} */
+
+#work:hover {
+  filter:hue-rotate(-60deg);
+}
+
+#skills:hover {
+  filter:hue-rotate(-60deg);
+}
+
 /* HIDDENS */
 
-#tags {visibility: hidden;}
-#curations {visibility: hidden;}
-#nightfall-icing{visibility: hidden;}
+#tags {display:none;}
+#curations {display:none;}
+#nightfall-icing{display:none;}
+#bf-and-me{display:none;}
+#hi{display:none;}

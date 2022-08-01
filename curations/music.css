@@ -3,7 +3,6 @@ body {
   /* background-image: none; */
 }
 
-
 #music-list {
   display: flex;
   flex-wrap: wrap; 
