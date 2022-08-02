@@ -24,7 +24,7 @@ a:visited {
 
 #title {
   text-align: left;
-    font-size: 2.25rem !important;
+    font-size: 3rem;
     padding: 1rem;
 }
 #title a {
@@ -102,6 +102,8 @@ a:visited {
 
     .vidbox {
       width: 70%;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
     }
 }
 
@@ -133,11 +135,13 @@ p {
 
       .vidbox {
         width: 100%;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
       }
 
       .vidbox h2, .vidbox p {
-        /* padding-left: 2em; */
-        text-align: center;
+        padding: 1em;
+        text-align: left;
       }
 }
 
@@ -197,12 +201,11 @@ p {
   .video {
     aspect-ratio: 16 / 9;
   width: 100%;
+  margin-bottom: 2em;
   }
 
   .vidbox {
     padding: 0rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
     background-color: rgba(255, 255, 255, 0);
     /* box-shadow: 0px 0px 5vw 5vw white; */
   }
@@ -227,6 +230,7 @@ p {
     padding: 2rem;
     margin: 0rem;
     color: white;
+    max-width: 300px;
   }
 
   .bc-embed iframe {box-shadow: 0px 0px 100vh 0em white;}
@@ -248,6 +252,11 @@ p {
   .contact {
     padding-left: 1rem;
     margin-bottom: 3rem;
+  }
+
+  .exhibition-title {
+    font-style: italic;
+    line-height: 2em;
   }
 
   /* .yt-embed {
