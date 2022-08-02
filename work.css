@@ -1,13 +1,9 @@
 html, body, section {
     height: 100%;
-    overscroll-behavior: none;
   }  
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
-    background-image: none;
-    background-color: black;
+    /* background-color: black; */
     height: 100%;
     margin: 0;
 }
@@ -25,8 +21,6 @@ a {
 a:visited {
     color:rgb(70, 52, 234);
 }
-
-
 
 #title {
   text-align: left;
@@ -52,6 +46,10 @@ a:visited {
 
 .right-half{
     align-items: center;
+    color: white;
+    background-color: black;
+    /* background-image: radial-gradient(white,rgb(68, 68, 68),white); */
+    /* background-image: repeating-linear-gradient(black,white,black,white,black,white,black,white); */
     /* background-image: url("img/grassy.jpg");
     background-size: cover;
     background-repeat: no-repeat; */
@@ -101,9 +99,13 @@ a:visited {
         overflow-y: scroll;
         overflow-x: hidden;
     } 
+
+    .vidbox {
+      width: 70%;
+    }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   h1{
     font-size: 2.5rem;
     padding-top: 1.5rem;
@@ -127,6 +129,15 @@ p {
         display: flex;
         flex-direction: column;
         justify-content:center;
+      }
+
+      .vidbox {
+        width: 100%;
+      }
+
+      .vidbox h2, .vidbox p {
+        /* padding-left: 2em; */
+        text-align: center;
       }
 }
 
@@ -188,17 +199,24 @@ p {
   width: 100%;
   }
 
-  .featured-video {
-    width: 80%;
+  .vidbox {
     padding: 0rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    background-color: white;
-    box-shadow: 0px 0px 5vw 5vw white;
+    background-color: rgba(255, 255, 255, 0);
+    /* box-shadow: 0px 0px 5vw 5vw white; */
   }
 
-  .featured-video p {
+  .vidbox iframe {
+    box-shadow: 0px 0px 100vh 0em white;
+  }
+
+  .vidbox p {
     line-height: 2rem;
+  }
+
+  .imgbox {
+    width: 100%;
   }
 
   .featured-img {
@@ -210,6 +228,8 @@ p {
     margin: 0rem;
     color: white;
   }
+
+  .bc-embed iframe {box-shadow: 0px 0px 100vh 0em white;}
 
   .bc-embed h2 {
     margin-bottom: 0rem;

@@ -4,109 +4,20 @@ html {
 
 body {
   color: #000000;
-  background-image: url("img/bg.gif");
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-  text-align: center;
+h1, h2 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p, h3, li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 a:visited {
   color: initial;
 }
-
-.container {
-  display: flex;
-
-  flex-wrap: wrap; 
-  justify-content: space-evenly; 
-  align-items: center;    
-  flex-basis: 1;
-
-  padding: 2vw;
-  gap: 2vw;
-}
-
-.container > div {
-  background-color: rgb(255, 255, 255);
-  border: 0px solid #ffffff;
-
-  padding: 2vw;
-}
-
-.photo {
-  padding: 0px !important;
-  margin: 0.5rem;
-  image: 3rem;
-}
-
-.photo > img {
-  display: block;
-}
-
-.music {
-  margin: 1rem;
-}
-
-.important {
-  box-shadow: 0px 0px 2rem 2rem white;
-}
-
-.unimportant {
-  box-shadow: 0px 0px 1rem 1rem white;
-  border-radius: 2rem;
-}
-
-#introduction {
-  /* box-shadow: 0px 0px 2rem 2rem rgb(243, 255, 197);
-  background: radial-gradient(white, rgb(243, 255, 197)); */
-  margin: 3vw;
-}
-
-#contact-me a {
-  font-weight: bold;
-  font-size: 2rem;
-  padding: 3rem;
-  vertical-align:super;
-}
-
-#title {
-  /* flex: 100%; */
-  font-size: 7vw;
-  margin: 3rem;
-}
-
-#title:hover {
-  color: white;
-}
-
-#photobooth {
-  flex: 30%;
-}
-
-/* #work {
-  flex: 100%;
-}
-
-#skills{
-  flex: 100%;
-} */
-
-#work:hover {
-  filter:hue-rotate(-60deg);
-}
-
-#skills:hover {
-  filter:hue-rotate(-60deg);
-}
-
-/* HIDDENS */
-
-#tags {display:none;}
-#curations {display:none;}
-#nightfall-icing{display:none;}
-#bf-and-me{display:none;}
-#hi{display:none;}
