@@ -75,6 +75,10 @@
     filter:hue-rotate(-60deg);
   }
 
+  #hi {
+    margin: 6em;
+  }
+
   @media screen and (max-width: 1200px) {
     #title {
         font-size: 7vw;

@@ -1,0 +1,6 @@
+# for root
+/*              /index.html     200
+​
+# for the rest
+/work/*        /work.html     200
+/music/*      /music.html   200
