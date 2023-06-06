@@ -1,6 +1,9 @@
   body {
     background-image: url("img/bg.gif");
+    background-size: 100%;
+    background-color: #CDCDEA;
     text-align: center;
+    /* cursor: url('img/AORANGE.GIF'),auto; */
   }
   
   .container {
@@ -77,6 +80,8 @@
 
   #hi {
     margin: 6em;
+    padding: 1em;
+    font-size: 1.3rem;
   }
 
   @media screen and (max-width: 1200px) {

@@ -19,7 +19,7 @@ a {
 }
 
 a:visited {
-  color: initial;
+  /* color: initial; */
 }
 
 ::-webkit-scrollbar {
