@@ -1,12 +1,16 @@
   body {
-    background-image: url("img/bg.gif");
-    background-size: 100%;
+    
+    /* background-size: 100%; */
     background-color: #CDCDEA;
     text-align: center;
     /* cursor: url('img/AORANGE.GIF'),auto; */
+    padding: 2rem;
+    max-width: max-content;
+margin: auto;
   }
   
   .container {
+    background-image: url("img/bg.gif");
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-evenly; 
@@ -39,10 +43,17 @@
   .important {
     box-shadow: 0px 0px 2rem 2rem white;
   }
+
+
+  .page-buttons img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 2rem 2rem rgba(255, 255, 255, 0.5);
+  }
   
   .unimportant {
     box-shadow: 0px 0px 1rem 1rem white;
     border-radius: 2rem;
+    background-color: rgb(255, 255, 255,0.7);
   }
   
   #introduction {
