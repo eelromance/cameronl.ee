@@ -100,6 +100,10 @@ margin: auto;
         font-size: 7vw;
         margin: 1rem;
     }
+
+    #hi {
+      margin: 2em;
+    }
   }
   
   /* HIDDENS */
