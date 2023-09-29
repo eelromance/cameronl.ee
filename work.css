@@ -6,6 +6,7 @@ body {
   /* background-color: black; */
   height: 100%;
   margin: 0;
+  background-color: #eee;
 }
 
 h1 {
@@ -23,6 +24,7 @@ a:visited {
 }
 
 #title {
+  color: #444;
   text-align: left;
   font-size: 3rem;
   padding: 1rem;
@@ -152,7 +154,7 @@ a:visited {
 }
 
 .list-container ul {
-  border-top: 1px solid black;
+  border-top: 1px solid #444;
   padding-left: 0;
   padding-bottom: 3rem;
   margin: 0;

@@ -11,7 +11,18 @@ margin: 40px auto;
   padding: 0 10px;
 }
 
+h1 {
+  line-height: 1;
+  font-weight: 500;
+}
+
 .imgbox {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
+    padding: 1rem;
+}
+
+.topHeading {
+  text-align: right;
+  font-weight: 500;
 }
