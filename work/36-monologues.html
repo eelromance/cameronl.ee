@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cameron.lee</title>
+  <link rel="stylesheet" href="../style.css">
+  <!-- <link rel="stylesheet" href="homepage.css"> -->
+  <link rel="stylesheet" href="../post.css">
+</head>
+ <body>
+<div class="main-container">
+    <h1>36 MONOLOGUES<br>ABOUT URBAN PLANNING</h1>
+    <img src="../img/36-monologues-poster.jpg" alt="" class="imgbox">
+
+    <p>In late summer 2023, I was the Sound Designer for this weird and awesome theatre piece produced by the <a href="https://municipalholecompany.neocities.org/36mprogram">Municipal Hole Company</a> called <i>36 MONOLOGUES ABOUT URBAN PLANNING (to be performed in a cul-de-sac)</i> wherein 4 performers deliver 9 monologues each. Contrary to the title, it took place at <a href="https://neofuturists.org/">The Neofuturist Theatre</a> in Chicago.</p>
+      
+    <p>At the top of the show, a deck of cards is shuffled by the audience, determining the order of the monologues. With each drawing of the cards a new title is announced, "FOUR OF CLUBS: INTERVIEW WITH THE AUDIENCE" for example, then the actors scramble into place. The monologues are funny, disturbing, apocalyptic, and downright wacky. It's wild ride. My job was to enhance the sensory experience with sound. I also got to play the announcer.</p>
+      
+    <p><b>I designed two types of sounds for this production: pre-recorded cues and live sounds.</b> Let's go over the design goals for each, and how they were met.</p> 
+    
+    <p>First, I began work on pre-recorded sounds, starting with transitionary beeps. Their job is to signal the beginning and end of each monologue and transition. This an important function for both the actors and the audience as we are taken from one world to the next. Because the tone of each monologue varied wildly, I knew the solution had to remain neutral and instead had to work as a bit of metatextual messaging. In other words, 100% theatrical and 0% dramatic. Working with the director on this problem, I identified three types of messages to be heard with each transition: END, GO, and DONE.</p>
+
+    <p>END is a period. It's heard shortly after the final word of every monologue and before the announcer reads the next title. Then comes GO, which signals to the actors that it's time to transition. DONE means everything is in place, and the monologue has begun. I gathered a pool of over 30 different sounds before I landed on the three that I felt most effectively communicated these messages.</p>
+      
+    <ol>
+      <li>END - Airplane seatbelt sign</li>
+      <audio src="../audio/beep_cabin.mp3" type="audio/mp3" controls></audio>
+      <li>GO - Electronic beep with reverb</li>
+      <audio src="../audio/beep_locator.mp3" type="audio/mp3" controls></audio>
+      <li>DONE - Mini timer bell</li>
+      <audio src="../audio/bell_timer.mp3" type="audio/mp3" controls></audio>
+    </ol>
+      
+      <p>Another pre-recorded element of the design was something to be heard during the transitions, to act as a palette cleanser. My initial concept was to create one long gradually evolving sound and simply cut it into 36 segments. Like the beeps, I tried to keep it neutral. It wasn't until we tested this idea out in rehearsal that this concept seemed to fail as a palette cleanser and generally felt like it was less fun than the rest of the show. It sort of had a blurring effect, rather than palette cleansing.</p>
+
+      <p>What we needed was extreme contrast, something to embrace the disorienting nihilism of the material. I decided to switch to an "everything flavor" approach. I found 37 unique and aurally striking sounds, about a minute each in length. I had a lot of fun pulling from a broad range of contexts both recognizable and not, from a tennis match, to a forest fire, to a jacuzzi jets. Now we were in the tumbler!</p>
+
+      <img src="../img/36-monologues-transitions.png" alt="" class="imgbox">
+
+      <p>One limitation of <a href="https://gobutton.app/">the app I used</a> (amazing app btw) was that the cues had to be in a fixed order. This meant we had no control over which monologues would be adjacent to which transition sounds. This limitation actually worked in our favor. While the monologues were randomized, they were still grouped by suit. The playwright let me in on a little secret: the suits represented thematic pillars. Hearts was love, clubs was war, diamonds was money, and spades was work. I used that framework to loosely trace a thematic arc with the order of the transition sounds. Loose, because I wanted to avoid sounds with an obvious emotional association. I was going for gray, grays that could be colored differently with each permutation the show took. I think it worked wonderfully.</p>
+
+      <img src="../img/36-monologues-setup2.jpg" alt="" class="imgbox"">
+      
+      <p>The other half of the equation was live sounds. Grey was interested in using my knowledge of modular synthesizers to rig up something that could add chaotic yet responsive accompaniment to the actors and at some points, add effects to their voices. <a href="https://www.modulargrid.net/e/racks/view/2288720">I devised a setup</a> with various digital audio processors and Rob Hordijk's Benjolin. Once I settled on a patch and got familiar with what it could do, I played along with the actors like a weird saxophone. Probably my favorite moment was Four of Hearts, when one of the actors patched in their phone audio and fed me Instagram reels which I unleashed granular mayhem on. <br><br>That's about it! Thanks for reading.</p>
+    
+ <!-- <div><p>This website continues to evolve.</p></div> -->
+
+ <div> <div> <p><a href="/work.html">← Back</a> </div>
+        
+ </div>
+
+
+</p>
+ </body>
+ <script src="https://unpkg.com/wavesurfer.js@7"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var els = document.querySelectorAll("audio");
+    for (var i = 0; i < els.length; i++) {
+        console.log(els[i].src);
+        let i_ = i;
+        let src_ = els[i].src;
+        let newNode = document.createElement("div")
+        newNode.innerHTML = `<table style="padding-top:16px;padding-bottom:16px;"><tr><td style="position: relative;top: 4px;width:40px;"><div class="controls" style=""> <button class="audiobtn" data-action="play" style="background: #eee; border: none; padding-left:0;padding-right:0;"> <svg class="playicon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg> <svg class="pauseicon" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause-circle"><circle cx="12" cy="12" r="10"></circle><line x1="10" y1="15" x2="10" y2="9"></line><line x1="14" y1="15" x2="14" y2="9"></line></svg> </button></div></td><td width="100%"><div class="wave"></div></td></tr></table>`;
+        els[i_].parentNode.insertBefore(newNode, els[i_])
+        els[i].remove();
+        let wavesurfer = WaveSurfer.create({
+            container: document.getElementsByClassName("wave")[i_],
+            waveColor: '#909090',
+            progressColor: '#443e3c',
+            cursorColor: '#ffffff',
+            backend: 'MediaElement',
+            mediaControls: false,
+            hideScrollbar: true,
+            minPxPerSec: 120,
+            normalize: true,
+            height: 64,
+        });
+        wavesurfer.once('ready', function() {
+            console.log('Using wavesurfer.js ' + WaveSurfer.VERSION);
+        });
+        wavesurfer.on('error', function(e) {
+            console.warn(e);
+        });
+        wavesurfer.on('play', function(e) {
+            document.getElementsByClassName("playicon")[i_].style.display = "none";
+            document.getElementsByClassName("pauseicon")[i_].style.display = "block";
+        });
+        wavesurfer.on('pause', function(e) {
+            document.getElementsByClassName("playicon")[i_].style.display = "block";
+            document.getElementsByClassName("pauseicon")[i_].style.display = "none";
+        });
+        newNode.querySelector('[data-action="play"]')
+            .addEventListener('click', wavesurfer.playPause.bind(wavesurfer));
+        wavesurfer.load(src_);
+    }
+});
+</script>
+
+ </html>
