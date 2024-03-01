@@ -1,5 +1,5 @@
 html {
-  background-color: #dee9e7;
+  background-color: #b3c9c1;
 }
 
 body {
@@ -62,19 +62,37 @@ img {
   display: none;
 }
 
+#nav-links-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   body {
     padding: 0%;
   }
 
   p {
-    font-size 16px;
-    padding-left: 1rem;
+    font-size: 22px;
+    padding: 1rem;
+    text-align: center;
   }
   
   h1 {
     font-size: 64px;
   }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  #nav-links {
+    display: none;
+  }
+
+  #nav-links-mobile {
+    display: block;
+  }
+
   #splash {
     display: none;
   }
