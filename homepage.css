@@ -1,111 +1,92 @@
+html {
+  background-color: #dee9e7;
+}
+
+body {
+  margin: 40px auto;
+  max-width: 1200px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+  padding: 0 10px;
+}
+
+p {
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
+  padding-top: 1rem;
+  color: #333;
+}
+
+h1 {
+  line-height: 0.5;
+  text-align: center;
+  font-size: 121.5px;
+  font-weight: normal;
+  margin: 7.5vw 0 1rem 0;
+  color: #333;
+}
+
+h2 {
+  font-size: 81px;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+a {
+  color: rgb(117, 102, 255);
+}
+
+a:visited {
+  color: rgb(117, 102, 255);
+}
+
+.imgbox {
+  max-width: 100%;
+  height: auto;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+img {
+  display: block;
+  box-shadow: 0px 0px 30px 0px #white;
+}
+
+#splash-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
   body {
-    
-    /* background-size: 100%; */
-    background-color: #CDCDEA;
-    text-align: center;
-    /* cursor: url('img/AORANGE.GIF'),auto; */
-    padding: 2rem;
-    max-width: max-content;
-margin: auto;
+    padding: 0%;
+  }
+
+  p {
+    font-size 16px;
+    padding-left: 1rem;
   }
   
-  .container {
-    background-image: url("img/bg.gif");
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly; 
-    align-items: center;    
-    flex-basis: 1;
-    padding: 2vw;
-    gap: 2vw;
+  h1 {
+    font-size: 64px;
   }
-  
-  .container > div {
-    background-color: rgb(255, 255, 255);
-    border: 0px solid #ffffff;
-    padding: 2vw;
+  #splash {
+    display: none;
   }
-  
-  .photo {
-    padding: 0px !important;
-    margin: 0.5rem;
-    image: 3rem;
-  }
-  
-  .photo > img {
+
+  #splash-mobile {
     display: block;
-  }
-  
-  .music {
-    margin: 1rem;
-  }
-  
-  .important {
-    box-shadow: 0px 0px 2rem 2rem white;
+    max-width: 100%;
   }
 
-
-  .page-buttons img {
-    border-radius: 50%;
-    box-shadow: 0px 0px 2rem 2rem rgba(255, 255, 255, 0.5);
-  }
-  
-  .unimportant {
-    box-shadow: 0px 0px 1rem 1rem white;
-    border-radius: 2rem;
-    background-color: rgb(255, 255, 255,0.7);
-  }
-  
-  #introduction {
-    margin: 3vw;
-  }
-  
-  #contact-me a {
-    font-weight: bold;
-    font-size: 2rem;
-    padding: 3rem;
-    vertical-align:super;
-  }
-  
-  #title {
-    font-size: 4vw;
-    margin: 2rem;
-    text-decoration: none;
-  }
-  
-  #title:hover {
-    color: white;
-  }
-  
-  #photobooth {
-    flex: 30%;
-  }
-  
-  #work:hover {
-    filter:hue-rotate(-60deg);
-  }
-  
-  #skills:hover {
-    filter:hue-rotate(-60deg);
+  img {
+    object-fit: cover; object-position: 100% 0;
   }
 
-  #hi {
-    margin: 6em;
-    padding: 1em;
-    font-size: 1.3rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    #title {
-        font-size: 7vw;
-        margin: 1rem;
-    }
-
-    #hi {
-      margin: 2em;
-    }
-  }
   
-  /* HIDDENS */
-  
-  /* #hi{display:none;} */
+}
