@@ -1,5 +1,5 @@
 html {
-  background-color: #b3c9c1;
+  background-color: #eeeeee;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
   max-width: 1200px;
   line-height: 1.6;
   font-size: 18px;
-  color: #333;
+  color: #273EB1;
   padding: 0 10px;
 }
 
@@ -16,7 +16,7 @@ p {
   text-align: left;
   margin: 0;
   padding-top: 1rem;
-  color: #333;
+  color: #273EB1;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
   font-size: 121.5px;
   font-weight: normal;
   margin: 7.5vw 0 1rem 0;
-  color: #333;
+  color: #273EB1;
 }
 
 h2 {
@@ -36,15 +36,15 @@ h3 {
   font-size: 24px;
   text-align: center;
   margin: 0 0 1rem 0;
-  color: #333;
+  color: #273EB1;
 }
 
 a {
-  color: rgb(117, 102, 255);
+  color: rgb(137, 53, 255);
 }
 
 a:visited {
-  color: rgb(117, 102, 255);
+  color: rgb(137, 53, 255);
 }
 
 .imgbox {
@@ -67,9 +67,25 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
+  html {
+    background-image: url("/img/splash3.gif");
+    display: table;
+    margin: auto;
+  }
   body {
     padding: 0%;
+    display: table-cell;
+    vertical-align: middle;
   }
+
+  html, body {
+    height: 100%;
+}
+
+.main-container {
+  background-color: #eeeeee;
+  padding: 1vw;
+}
 
   p {
     font-size: 22px;
