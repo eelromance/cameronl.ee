@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cameronl.ee</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" href="favicon-57.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #273EB1;
+            color: #DEFFA9;
+        }
+
+        @media screen and (max-width: 768px) {
+            body #top-lines img {
+                width: 100vw;
+                height: auto;
+            }
+            body #lower-lines img {
+                width: 100vw;
+                height: auto;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            body #top-lines img {
+                width: 50vw;
+                height: auto;
+            }
+            body #lower-lines img {
+                width: 50vw;
+                height: auto;
+            }
+        }
+
+        body #top-lines img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        body #lower-lines img {
+            transform: scale(-1);
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        body #wrapper {
+            min-height: 100vh;
+            max-width: 720px;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        body #wrapper .header {
+            padding: 1.5rem 0;
+        }
+
+        body #wrapper .header .model-logo {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+
+        body #wrapper li a {
+            display: block;
+            color: #273EB1;
+            background-color: #DEFFA9;
+            padding: 18px 57px;
+            transition: 0.3s;
+        }
+
+        body #wrapper li a:hover {
+            background-color: #49cdc9;
+            transition: 0.3s;
+        }
+
+        body #wrapper li {
+            margin: .9rem;
+        }
+
+        body #wrapper .spacer {
+            display: block;
+            padding: 1.5rem 0;
+        }
+
+        body #wrapper .footer {
+            margin-bottom: 1rem;
+        }
+
+        body #wrapper .footer .footer-img {
+            width: 128px;
+            height: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="top-lines">
+        <!-- <img src="assets/linhas.png"> -->
+    </div>
+
+    <div id="lower-lines">
+        <!-- <img src="assets/linhas.png"> -->
+    </div>
+
+    <div id="wrapper">
+        <div class="header">
+            <img class="model-logo" src="img/scrap39.jpg"><br>
+            CAMERONL.EE
+        </div>
+
+        <li><a href="#link1">Link 1</a></li>
+
+        <li><a href="#link2">Link 2</a></li>
+
+        <li><a href="#link3">Link 3</a></li>
+        
+        <li><a href="#link4">Link 4</a></li>
+
+        <div class="spacer"></div>
+        <div class="footer">
+            <img class="footer-img" src="img/tulipswavinggif.gif">
+        </div>
+    </div>
+</body>
+</html>
