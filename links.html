@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,6 +84,7 @@
             font-size: 2em;
             color:#ffed7b;
             font-style: oblique;
+            text-decoration: underline;
         }
 
         body #wrapper .header :visited {
@@ -124,8 +125,6 @@
             transition: 0.3s;
         }
 
-    
-
         body #wrapper li {
             margin: .9rem;
         }
@@ -142,6 +141,24 @@
         body #wrapper .footer .footer-img {
             width: 128px;
             height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            body #wrapper .subheading {
+            padding: 0.5rem 0;
+            font-size: 1.25rem;
+            font-style: italic;
+            margin: 0;
+        }
+
+        body #wrapper li a {
+            display: block;
+            color: #273EB1;
+            background-color: #dedcdc;
+            padding: 15px 30px;
+            font-size: 1.25rem;
+        }
+
         }
 
     </style>
